@@ -3,229 +3,326 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>InvoTrack - Privacy Policy</title>
+    <title>InvoTrack - Professional Invoicing Made Simple</title>
+    <meta name="description" content="InvoTrack - Job tracking and invoicing app for freelancers and small businesses. Create invoices, track jobs, manage clients.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        :root {
-            --teal-600: #0D9488;
-            --teal-700: #0F766E;
-            --gray-50: #F9FAFB;
-            --gray-600: #4B5563;
-            --gray-900: #111827;
-        }
-        
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+            color: #e2e8f0;
+            min-height: 100vh;
             line-height: 1.6;
-            color: var(--gray-900);
-            background: var(--gray-50);
         }
-        
-        header {
-            background: linear-gradient(135deg, var(--teal-600), var(--teal-700));
-            color: white;
-            padding: 3rem 1rem;
-            text-align: center;
-        }
-        
-        header h1 {
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 0.5rem;
-        }
-        
-        header p {
-            opacity: 0.9;
-            font-size: 1.1rem;
-        }
-        
-        main {
-            max-width: 800px;
+
+        .container {
+            max-width: 1200px;
             margin: 0 auto;
-            padding: 2rem 1rem;
+            padding: 40px 20px;
         }
-        
-        .card {
-            background: white;
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .logo {
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(135deg, #0d9488 0%, #14b8a6 100%);
+            border-radius: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 30px;
+            box-shadow: 0 20px 40px rgba(13, 148, 136, 0.3);
+        }
+
+        .logo svg {
+            width: 60px;
+            height: 60px;
+            fill: white;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 16px;
+            background: linear-gradient(135deg, #fff 0%, #94a3b8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero .tagline {
+            font-size: 1.25rem;
+            color: #94a3b8;
+            margin-bottom: 40px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            background: linear-gradient(135deg, #0d9488 0%, #14b8a6 100%);
+            color: white;
+            padding: 16px 32px;
             border-radius: 12px;
-            padding: 2rem;
-            margin-bottom: 1.5rem;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-        }
-        
-        h2 {
-            color: var(--teal-700);
-            font-size: 1.5rem;
-            margin-bottom: 1rem;
-            padding-bottom: 0.5rem;
-            border-bottom: 2px solid var(--teal-600);
-        }
-        
-        h3 {
-            color: var(--gray-900);
+            text-decoration: none;
+            font-weight: 600;
             font-size: 1.1rem;
-            margin: 1.5rem 0 0.5rem 0;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 10px 30px rgba(13, 148, 136, 0.4);
         }
-        
-        p, li {
-            color: var(--gray-600);
-            margin-bottom: 0.75rem;
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(13, 148, 136, 0.5);
         }
-        
-        ul {
-            padding-left: 1.5rem;
+
+        .cta-button svg {
+            width: 24px;
+            height: 24px;
         }
-        
-        .highlight {
-            background: #ECFDF5;
-            border-left: 4px solid var(--teal-600);
-            padding: 1rem;
-            border-radius: 0 8px 8px 0;
-            margin: 1rem 0;
+
+        /* Features Section */
+        .features {
+            padding: 60px 0;
         }
-        
-        .highlight p {
-            margin: 0;
-            color: var(--teal-700);
+
+        .features h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 50px;
+            color: #f1f5f9;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+        }
+
+        .feature-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 30px;
+            transition: transform 0.3s, background 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 255, 255, 0.08);
+        }
+
+        .feature-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, #0d9488 0%, #14b8a6 100%);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .feature-icon svg {
+            width: 28px;
+            height: 28px;
+            fill: white;
+        }
+
+        .feature-card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 12px;
+            color: #f1f5f9;
+        }
+
+        .feature-card p {
+            color: #94a3b8;
+            font-size: 0.95rem;
+        }
+
+        /* Benefits Section */
+        .benefits {
+            padding: 60px 0;
+        }
+
+        .benefits-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 16px;
+        }
+
+        .benefit-tag {
+            background: rgba(13, 148, 136, 0.2);
+            border: 1px solid rgba(13, 148, 136, 0.3);
+            color: #5eead4;
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-size: 0.9rem;
             font-weight: 500;
         }
-        
-        footer {
+
+        /* Footer */
+        .footer {
             text-align: center;
-            padding: 2rem;
-            color: var(--gray-600);
-            font-size: 0.875rem;
+            padding: 40px 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            margin-top: 40px;
         }
-        
-        a {
-            color: var(--teal-600);
+
+        .footer p {
+            color: #64748b;
+            font-size: 0.9rem;
         }
-        
-        .badge {
-            display: inline-block;
-            background: var(--teal-600);
-            color: white;
-            padding: 0.25rem 0.75rem;
-            border-radius: 9999px;
-            font-size: 0.875rem;
-            margin-bottom: 1rem;
+
+        .footer a {
+            color: #14b8a6;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero .tagline {
+                font-size: 1rem;
+            }
+
+            .features h2 {
+                font-size: 1.5rem;
+            }
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>InvoTrack</h1>
-        <p>Privacy Policy</p>
-    </header>
-    
-    <main>
-        <div class="card">
-            <span class="badge">Last Updated: December 2025</span>
-            
-            <div class="highlight">
-                <p>InvoTrack is designed with privacy first. All your data stays on your device. We don't collect, store, or transmit any of your personal or business information.</p>
+    <div class="container">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="logo">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14 2H6C4.9 2 4 2.9 4 4V20C4 21.1 4.9 22 6 22H18C19.1 22 20 21.1 20 20V8L14 2ZM16 18H8V16H16V18ZM16 14H8V12H16V14ZM13 9V3.5L18.5 9H13Z"/>
+                </svg>
             </div>
-        </div>
-        
-        <div class="card">
-            <h2>1. Information We Collect</h2>
-            <p><strong>We collect no data.</strong></p>
-            <p>InvoTrack operates entirely offline. All information you enter into the app—including jobs, clients, invoices, time logs, and settings—is stored locally on your device only.</p>
+            <h1>InvoTrack</h1>
+            <p class="tagline">Professional invoicing and job management for freelancers and small businesses. Create invoices, track jobs, and manage clients — all in one app.</p>
             
-            <h3>What this means:</h3>
-            <ul>
-                <li>No account registration required</li>
-                <li>No cloud storage or sync</li>
-                <li>No analytics or tracking</li>
-                <li>No advertising</li>
-                <li>No data sharing with third parties</li>
-            </ul>
-        </div>
-        
-        <div class="card">
-            <h2>2. Data Storage</h2>
-            <p>All data is stored locally on your device using secure, encrypted storage provided by your operating system. This includes:</p>
-            <ul>
-                <li>Job information and status</li>
-                <li>Client names and contact details</li>
-                <li>Invoice data and history</li>
-                <li>Time tracking logs</li>
-                <li>Company profiles and payment details</li>
-                <li>App settings and preferences</li>
-            </ul>
-            
-            <div class="highlight">
-                <p>Your data never leaves your device unless you explicitly export or share it.</p>
+            <a href="#" class="cta-button" id="playStoreBtn">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="currentColor" d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/>
+                </svg>
+                Coming Soon to Google Play
+            </a>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features">
+            <h2>Everything You Need</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24"><path d="M14 2H6C4.9 2 4 2.9 4 4V20C4 21.1 4.9 22 6 22H18C19.1 22 20 21.1 20 20V8L14 2ZM16 18H8V16H16V18ZM16 14H8V12H16V14ZM13 9V3.5L18.5 9H13Z"/></svg>
+                    </div>
+                    <h3>Professional Invoices</h3>
+                    <p>Generate beautiful PDF invoices and quotes with your branding. Send directly to clients via email or messaging apps.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24"><path d="M19 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3ZM9 17H7V10H9V17ZM13 17H11V7H13V17ZM17 17H15V13H17V17Z"/></svg>
+                    </div>
+                    <h3>Job Tracking</h3>
+                    <p>Manage jobs with Kanban board or list view. Track status, hours, expenses, and never miss a deadline.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24"><path d="M12 12C14.21 12 16 10.21 16 8S14.21 4 12 4 8 5.79 8 8 9.79 12 12 12ZM12 14C9.33 14 4 15.34 4 18V20H20V18C20 15.34 14.67 14 12 14Z"/></svg>
+                    </div>
+                    <h3>Client Management</h3>
+                    <p>Keep all client information organized. Store contact details, payment preferences, and billing addresses.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24"><path d="M11.8 10.9C9.53 10.31 8.8 9.7 8.8 8.75C8.8 7.66 9.81 6.9 11.5 6.9C13.28 6.9 13.94 7.75 14 9H16.21C16.14 7.28 15.09 5.7 13 5.19V3H10V5.16C8.06 5.58 6.5 6.84 6.5 8.77C6.5 11.08 8.41 12.23 11.2 12.9C13.7 13.5 14.2 14.38 14.2 15.31C14.2 16 13.71 17.1 11.5 17.1C9.44 17.1 8.63 16.18 8.5 15H6.32C6.44 17.19 8.08 18.42 10 18.83V21H13V18.85C14.95 18.5 16.5 17.35 16.5 15.3C16.5 12.46 14.07 11.49 11.8 10.9Z"/></svg>
+                    </div>
+                    <h3>Revenue Analytics</h3>
+                    <p>Dashboard with insights on your earnings. Track revenue by month, year, and see your top-performing services.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24"><path d="M19.35 10.04C18.67 6.59 15.64 4 12 4C9.11 4 6.6 5.64 5.35 8.04C2.34 8.36 0 10.91 0 14C0 17.31 2.69 20 6 20H19C21.76 20 24 17.76 24 15C24 12.36 21.95 10.22 19.35 10.04ZM19 18H6C3.79 18 2 16.21 2 14S3.79 10 6 10H6.71C7.37 7.69 9.48 6 12 6C15.04 6 17.5 8.46 17.5 11.5V12H19C20.66 12 22 13.34 22 15S20.66 18 19 18Z"/></svg>
+                    </div>
+                    <h3>Works Offline</h3>
+                    <p>All your data is stored locally on your device. No internet required. Your data stays private and secure.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg viewBox="0 0 24 24"><path d="M19 9H15V3H9V9H5L12 16L19 9ZM5 18V20H19V18H5Z"/></svg>
+                    </div>
+                    <h3>Export & Backup</h3>
+                    <p>Export data to Excel/CSV. Create backups and restore anytime. Never lose your important business data.</p>
+                </div>
             </div>
-        </div>
-        
-        <div class="card">
-            <h2>3. Data Export & Backup</h2>
-            <p>InvoTrack provides features to export your data:</p>
-            <ul>
-                <li><strong>CSV Export:</strong> Export jobs, clients, and invoices to CSV format</li>
-                <li><strong>Backup:</strong> Create a full backup file of all app data</li>
-                <li><strong>PDF Generation:</strong> Generate invoice PDFs for sharing</li>
-            </ul>
-            <p>When you use these features, the files are saved to your device or shared through your device's share functionality. We have no access to these files.</p>
-        </div>
-        
-        <div class="card">
-            <h2>4. Permissions</h2>
-            <p>InvoTrack may request the following device permissions:</p>
-            <ul>
-                <li><strong>Storage:</strong> To save exported files, backups, and your company logo</li>
-                <li><strong>Notifications:</strong> To show timer alerts when tracking time on jobs</li>
-            </ul>
-            <p>All permissions are optional and the app functions without them (with limited features).</p>
-        </div>
-        
-        <div class="card">
-            <h2>5. Third-Party Services</h2>
-            <p>InvoTrack does not integrate with any third-party services, analytics platforms, or advertising networks. The app is completely self-contained.</p>
-        </div>
-        
-        <div class="card">
-            <h2>6. Data Security</h2>
-            <p>Since all data is stored locally on your device:</p>
-            <ul>
-                <li>Your device's built-in security (PIN, fingerprint, face ID) protects your data</li>
-                <li>Data is stored in the app's private storage area, inaccessible to other apps</li>
-                <li>Uninstalling the app will permanently delete all data</li>
-            </ul>
-            
-            <div class="highlight">
-                <p>We recommend using the backup feature regularly to prevent data loss.</p>
+        </section>
+
+        <!-- Benefits Tags -->
+        <section class="benefits">
+            <div class="benefits-list">
+                <span class="benefit-tag">✓ No Ads</span>
+                <span class="benefit-tag">✓ One-Time Purchase</span>
+                <span class="benefit-tag">✓ No Account Required</span>
+                <span class="benefit-tag">✓ Privacy First</span>
+                <span class="benefit-tag">✓ Multi-Language</span>
+                <span class="benefit-tag">✓ Dark Mode</span>
+                <span class="benefit-tag">✓ PDF Export</span>
+                <span class="benefit-tag">✓ Multiple Currencies</span>
             </div>
-        </div>
-        
-        <div class="card">
-            <h2>7. Children's Privacy</h2>
-            <p>InvoTrack is a business tool intended for adults. We do not knowingly collect any information from children under 13 years of age.</p>
-        </div>
-        
-        <div class="card">
-            <h2>8. Changes to This Policy</h2>
-            <p>If we make changes to this privacy policy, we will update the "Last Updated" date at the top. Since we don't collect any data, significant changes are unlikely.</p>
-        </div>
-        
-        <div class="card">
-            <h2>9. Contact Us</h2>
-            <p>If you have questions about this privacy policy or the app, you can contact us at:</p>
-            <p><a href="mailto:femboyservicesa@gmail.com">femboyservicesa@gmail.com</a></p>
-        </div>
-    </main>
-    
-    <footer>
-        <p>&copy; 2025 InvoTrack. All rights reserved.</p>
-        <p>Track • Invoice • Get Paid</p>
-    </footer>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="hero" style="padding-top: 40px;">
+            <h2 style="font-size: 1.8rem; margin-bottom: 20px; color: #f1f5f9;">Ready to simplify your invoicing?</h2>
+            <a href="#" class="cta-button" id="playStoreBtn2">
+                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="currentColor" d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"/>
+                </svg>
+                Coming Soon to Google Play
+            </a>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>© 2026 InvoTrack. All rights reserved.</p>
+            <p style="margin-top: 10px;">
+                <a href="mailto:femboyservicesa@gmail.com">Contact Support</a> · 
+                <a href="privacy-policy.html">Privacy Policy</a>
+            </p>
+        </footer>
+    </div>
 </body>
 </html>
-
-
