@@ -1,21 +1,24 @@
-# InvoTrack Privacy Policy
+# FallenDreams
 
-This repository hosts the Privacy Policy and landing page for **InvoTrack** - a job tracking and invoice management app.
+This repository hosts the website for **FallenDreams** - building tools that simplify your work.
 
 ## 🔗 Live URL
 
-**[https://cresifine.github.io/InvoTrack-privacy-policy/](https://cresifine.github.io/InvoTrack-privacy-policy/)**
+**[https://cresifine.github.io/FallenDreams-website/](https://cresifine.github.io/FallenDreams-website/)**
 
 ## 📄 Pages
 
 | Page | URL |
 |------|-----|
-| Landing Page | [index.html](https://cresifine.github.io/InvoTrack-privacy-policy/) |
-| Privacy Policy | [privacy-policy.html](https://cresifine.github.io/InvoTrack-privacy-policy/privacy-policy.html) |
+| FallenDreams Home | [index.html](https://cresifine.github.io/FallenDreams-website/) |
+| InvoTrack App | [apps/invotrack/](https://cresifine.github.io/FallenDreams-website/apps/invotrack/) |
+| InvoTrack Privacy Policy | [apps/invotrack/privacy-policy.html](https://cresifine.github.io/FallenDreams-website/apps/invotrack/privacy-policy.html) |
 
-## 📱 About InvoTrack
+## 📱 Apps
 
-InvoTrack is a privacy-focused mobile app for freelancers and small businesses to:
+### InvoTrack
+
+A privacy-focused mobile app for freelancers and small businesses to:
 - Track jobs and work hours
 - Manage clients
 - Generate professional invoices
@@ -29,14 +32,9 @@ InvoTrack is a privacy-focused mobile app for freelancers and small businesses t
 
 ## 📧 Contact
 
-For questions about the privacy policy or the app:
+For questions:
 - Email: [femboyservicesa@gmail.com](mailto:femboyservicesa@gmail.com)
 
 ## 📜 License
 
-© 2025 InvoTrack. All rights reserved.
-
-
-
-
-
+© 2026 FallenDreams. All rights reserved.
